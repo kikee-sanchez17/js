@@ -3,35 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dates Generator</title>
     <link rel="stylesheet" href="cssfile.css" type="text/css" />
     <script src="javas.js"></script>
   </head>
   <body>
-
-    <h1>MAMA TKM</h1>
-    <h3>hola cola</h3>
-    <button class="button button1" type="button" onclick="generateDates()">
+    <h1>Dates Generator</h1>
+    
+    
+    <div>
+      <table id="table">
+        <tr>
+          <td id="0"></td>
+        </tr>
+        <tr>
+          <td id="1"></td>
+        </tr>
+        <tr>
+          <td id="2"></td>
+        </tr>
+        <tr>
+          <td id="3"></td>
+        </tr>
+        <tr>
+          <td id="4"></td>
+        </tr>
+      </table>
+    </div>
+    
+    <button class="button-30" type="button" onclick="generateDates()">
       Generate Dates
     </button>
-    
+    <div>
+      <label for="lang">Language</label>
+      <select  id="langu" onchange="selectLanguage(this.value)">
+        <option value="eng">English</option>
+        <option value="cat" >Català</option>
+        <option value="esp" >Español</option>
+      </select>
 
-    <table id="table">
-      <tr>
-        <td id="0"></td>
-      </tr>
-      <tr>
-        <td id="1"></td>
-      </tr>
-      <tr>
-        <td id="2"></td>
-      </tr>
-      <tr>
-        <td id="3"></td>
-      </tr>
-      <tr>
-        <td id="4"></td>
-      </tr>
-    </table>
+    </div>
+    
   </body>
 </html>
